@@ -1,0 +1,13 @@
+header, footer, aside, .ex-breadcrumb, .page-title {
+    display: none
+}
+
+.print {
+    display: block;
+    visibility: visible;
+}
+
+.print {
+    border: 1px solid black;
+    font-size: 30px;
+}
