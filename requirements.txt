@@ -9,6 +9,7 @@ django_compressor==1.4
 django-any-urlfield
 django-any-imagefield
 django-filebrowser-no-grappelli
+django-polymorphic==0.7.2
 
 # Search
 django-haystack==2.4.1

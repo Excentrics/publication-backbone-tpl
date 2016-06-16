@@ -24,7 +24,7 @@ SECRET_KEY = '{{ secret_key }}'
 
 SITE_ID = 1
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 TEMPLATE_DEBUG = DEBUG
 THUMBNAIL_DEBUG = DEBUG
