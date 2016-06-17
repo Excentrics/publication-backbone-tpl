@@ -229,9 +229,9 @@ PIPELINE_COMPILERS = (
 STATICFILES_STORAGE = 'pipeline.storage.PipelineStorage'
 
 if DEBUG:
-    PIPELINE_LESS_ARGUMENTS = "-ru --source-map --include-path=../../../../../src/publicationbackbone/publication_backbone/:../../../../../lib/python2.7/site-packages/publication_backbone/:../../../../../lib/python2.7/site-packages/twitter_bootstrap/"
+    PIPELINE_LESS_ARGUMENTS = "-ru --source-map --include-path=../../../../../src/publicationbackbone/publication_backbone/:../../../../../venv/lib/python2.7/site-packages/publication_backbone/:../../../../../venv/lib/python2.7/site-packages/twitter_bootstrap/"
 else:
-    PIPELINE_LESS_ARGUMENTS = "-ru --clean-css --compress --include-path=../../../../../lib/python2.7/site-packages/publication_backbone/:../../../../../lib/python2.7/site-packages/twitter_bootstrap/"
+    PIPELINE_LESS_ARGUMENTS = "-ru --clean-css --compress --include-path=../../../../../venv/lib/python2.7/site-packages/publication_backbone/:../../../../../venv/lib/python2.7/site-packages/twitter_bootstrap/"
 
 PIPELINE_CSS = {
     'styles': {
@@ -334,7 +334,6 @@ HAYSTACK_SEARCH_RESULTS_PER_PAGE = 15
 #HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 
 CONSTANCE_CONFIG = {
-    'TSG_ADMINS_LIST': ("", _("List of e-mail addresses of the administrators involved in the consideration of the completed information on the MC and the HOA. Use a semicolon to separate addresses.")),
     'META_CONTAINER': ("", _("Meta block")),
     'COUNTERS': ("", _("Counter without image")),
 }

@@ -47,6 +47,6 @@ git+git://github.com/Excentrics/publication-backbone.git
 git+git://github.com/bradleyayers/django-ace.git
 git+git://github.com/Excentrics/beautiful-fields.git
 git+git://github.com/disqus/django-bitfield.git
-git+git://github.com/philomat/django-form-designer.git@0.8.1.5
+git+git://github.com/sergey-romanov/django-form-designer.git@0.8.1.5
 git+git://github.com/sergey-romanov/django-mptt-admin.git
 git+git://github.com/SmartTeleMax/chakert.git

@@ -1,6 +1,6 @@
 User-agent: Yandex
 Allow: /publications/feed/
-Allow: /
+Disallow: /
 Disallow: /admin/
 Disallow: /public/
 Disallow: /accounts/
@@ -14,7 +14,7 @@ Crawl-delay: 4.5
 Sitemap: http://{{ domain }}/sitemap.xml
 
 User-agent: Googlebot
-Allow: /
+Disallow: /
 Disallow: /admin/
 Disallow: /public/
 Disallow: /accounts/
@@ -26,7 +26,7 @@ Disallow: /publication/rubricator/
 Sitemap: http://{{ domain }}/sitemap.xml
 
 User-agent: *
-Allow: /
+Disallow: /
 Disallow: /admin/
 Disallow: /public/
 Disallow: /accounts/
