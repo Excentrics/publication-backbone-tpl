@@ -192,11 +192,21 @@ WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(PROJECT_PATH, '{{ project_name }}.sqlite3'),
-    }
+        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'OPTIONS': {
+            'sql_mode': 'ALLOW_INVALID_DATES',
+        },
+        'NAME': 'pb_{{ project_name }}_db',                      # Or path to database file if using sqlite3.
+        # The following settings are not used with sqlite3:
+        'USER': 'LOGIN',
+        'PASSWORD': 'PASSWORD',
+        'HOST': '127.0.0.1',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+        'PORT': '',                      # Set to empty string for default.
+    },
 }
 
 # Internationalization
